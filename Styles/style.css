@@ -1,0 +1,963 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Merriweather', serif;
+}
+
+/* Navigation */
+
+.header {
+    background-color: rgb(23, 90, 167);
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu__tittle {
+    width: 150px;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+}
+
+.menu,
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    list-style-type: none;
+    font-weight: 900;
+    font-size: 25px;
+    position:sticky;
+    top: 0;
+}
+
+.menu__item {
+    margin-inline: 15px;
+}
+
+.menu__item a {
+    color: yellow;
+    text-decoration: none;
+}
+
+.menu__item.active a, 
+.menu__item a:hover {
+    color: rgb(110, 110, 9);
+}
+
+/* Navigation End */
+/* Main */
+
+.tittle,
+.animals__Tittle,
+.villager__tittle,
+.farm__tittle,
+.crops__tittle {
+    text-align: center;
+    color: goldenrod;
+    font-size: 25px;
+}
+
+.contact{
+    flex-wrap: wrap;
+    height: 100vh;
+}
+
+.main,
+.contact {
+    background-image: url(./../assets/img/background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+}
+.mainbox {
+    align-self: center;
+    color: rgb(255, 255, 255);
+    background-color: rgba(31, 29, 29, 0.404);
+    padding: 25px;
+    text-align: center;
+    border-radius: 5px;
+    overflow: auto;
+    margin-inline: 20%;
+    font-size: 14px;
+}
+
+.animals__P,
+.villager__p,
+.farm__p,
+.crops__p {
+    align-self: center;
+    color: rgb(255, 255, 255);
+    background-color: rgba(31, 29, 29, 0.404);
+    text-align: center;
+    overflow: auto;
+    font-size: 14px;
+}
+
+/* Main End */
+/* Sections */
+
+.section {
+    display: flex;
+    padding: 30px;
+    gap: 25px;
+    flex: 1;
+}
+
+.section__item {
+    background-color: rgba(61, 59, 59, 0.644);
+    border-radius: 15px;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 5px;
+}
+
+.section__farm {
+    font-size: 10px;
+    background-image: url(./../assets/img/background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    align-items: center;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(11, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    grid-template-areas: 
+        ". . . . . farm__tittle . . . . ."
+        ". . farm__p farm__p farm__p farm__p farm__p farm__p farm__p . ."
+        ". farm__coop1         farm__coop2          farm__coop3 farm__animals1   farm__animals2   farm__animals3                        farm__Cabins1            farm__Cabins2         farm__Cabins3 ."
+        ". farm__coop__item1     farm__coop__item2    farm__coop__item3 farm__animals__item1   farm__animals__item2   farm__animals__item3    farm__Cabins__item1   farm__Cabins__item2    farm__Cabins__item3 ."
+        ". farm__coop__tittle  farm__coop__tittle   farm__coop__tittle farm__animals__tittle   farm__animals__tittle   farm__animals__tittle   farm__Cabins__tittle   farm__Cabins__tittle   farm__Cabins__tittle ."
+        ". farm__barn1         farm__barn2          farm__barn3           farm__storage1   farm__storage2   farm__storage3                        farm__misc1   farm__misc2   farm__misc3 ."
+        ". farm__barn__item1   farm__barn__item2    farm__barn__item3     farm__storage__item1   farm__storage__item2   farm__storage__item3      farm__misc__item1   farm__misc__item2   farm__misc__item3 ."
+        ". farm__barn__tittle  farm__barn__tittle   farm__barn__tittle    farm__storage__tittle   farm__storage__tittle   farm__storage__tittle   farm__misc__tittle   farm__misc__tittle   farm__misc__tittle .";
+}
+
+.section__farm img {
+    max-width: 100px;
+}
+.farm__tittle {
+    grid-area: farm__tittle;
+}
+
+.farm__p {
+    grid-area: farm__p;
+}
+
+.farm__misc1 {
+    grid-area: farm__misc1;
+}
+
+.farm__misc2 {
+    grid-area: farm__misc2;
+}
+
+.farm__misc3 {
+    grid-area: farm__misc3;
+}
+
+.farm__misc__item1 {
+    grid-area: farm__misc__item1;
+}
+
+.farm__misc__item2 {
+    grid-area: farm__misc__item2;
+}
+
+.farm__misc__item3 {
+    grid-area: farm__misc__item3;
+}
+
+.farm__misc__tittle {
+    grid-area: farm__misc__tittle;
+}
+
+.farm__Cabins1 {
+    grid-area: farm__Cabins1;
+}
+
+.farm__Cabins2 {
+    grid-area: farm__Cabins2;
+}
+
+.farm__Cabins3 {
+    grid-area: farm__Cabins3;
+}
+
+.farm__Cabins__item1 {
+    grid-area: farm__Cabins__item1;
+}
+
+.farm__Cabins__item2 {
+    grid-area: farm__Cabins__item2;
+}
+
+.farm__Cabins__item3 {
+    grid-area: farm__Cabins__item3;
+}
+
+.farm__Cabins__tittle {
+    grid-area: farm__Cabins__tittle;
+}
+
+.farm__storage1 {
+    grid-area: farm__storage1;
+}
+
+.farm__storage2 {
+    grid-area: farm__storage2;
+}
+
+.farm__storage3 {
+    grid-area: farm__storage3;
+}
+
+.farm__storage__item1 {
+    grid-area: farm__storage__item1;
+}
+
+.farm__storage__item2 {
+    grid-area: farm__storage__item2;
+}
+
+.farm__storage__item3 {
+    grid-area: farm__storage__item3;
+}
+
+.farm__storage__tittle {
+    grid-area: farm__storage__tittle;
+}
+
+.farm__animals1 {
+    grid-area: farm__animals1;
+}
+
+.farm__animals2 {
+    grid-area: farm__animals2;
+}
+
+.farm__animals3 {
+    grid-area: farm__animals3;
+}
+
+.farm__animals__item1 {
+    grid-area: farm__animals__item1;
+}
+
+.farm__animals__item2 {
+    grid-area: farm__animals__item2;
+}
+
+.farm__animals__item3 {
+    grid-area: farm__animals__item3;
+}
+
+.farm__animals__tittle {
+    grid-area: farm__animals__tittle;
+}
+
+.farm__coop1 {
+    grid-area: farm__coop1;
+}
+
+.farm__coop2 {
+    grid-area: farm__coop2;
+}
+
+.farm__coop3 {
+    grid-area: farm__coop3;
+}
+
+.farm__coop__item1 {
+    grid-area: farm__coop__item1;
+}
+
+.farm__coop__item2 {
+    grid-area: farm__coop__item2;
+}
+
+.farm__coop__item3 {
+    grid-area: farm__coop__item3;
+}
+
+.farm__coop__tittle {
+    grid-area: farm__coop__tittle;
+}
+
+.farm__barn1 {
+    grid-area: farm__barn1;
+}
+
+.farm__barn2 {
+    grid-area: farm__barn2;
+}
+
+.farm__barn3 {
+    grid-area: farm__barn3;
+}
+
+.farm__barn__item1 {
+    grid-area: farm__barn__item1;
+}
+
+.farm__barn__item2 {
+    grid-area: farm__barn__item2;
+}
+
+.farm__barn__item3 {
+    grid-area: farm__barn__item3;
+}
+
+.farm__barn__tittle {
+    grid-area: farm__barn__tittle;
+}
+
+.section__animals {
+    font-size: 10px;
+    background-image: url(./../assets/img/background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    align-items: center;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    grid-template-areas: 
+        ". . . . . animals__Tittle animals__Tittle . . . . ."
+        ". . animals__P animals__P animals__P animals__P animals__P animals__P animals__P animals__P . ."
+        ". . animals__coop1 animals__coop2 animals__coop3 animals__coop4 animals__coop5 animals__coop6 animals__coop7 animals__coop8 . ."
+        ". . animals__coop__item1 animals__coop__item2 animals__coop__item3 animals__coop__item4 animals__coop__item5 animals__coop__item6 animals__coop__item7 animals__coop__item8 . ."
+        ". . coop__animals__tittle coop__animals__tittle coop__animals__tittle coop__animals__tittle coop__animals__tittle coop__animals__tittle coop__animals__tittle coop__animals__tittle . ."
+        ". . .   animals__barn1 animals__barn2 animals__barn3 animals__barn4 animals__barn5 animals__barn6 . . ."
+        ". . .  animals__barn__item1 animals__barn__item2 animals__barn__item3 animals__barn__item4 animals__barn__item5 animals__barn__item6 . . ."
+        ". . .  barn__animals__tittle barn__animals__tittle barn__animals__tittle barn__animals__tittle barn__animals__tittle barn__animals__tittle  . . .";
+}
+
+.animals__Tittle{
+    grid-area: animals__Tittle;
+}
+
+.animals__P{
+    grid-area: animals__P;
+}
+
+.coop__animals__tittle{
+    grid-area: coop__animals__tittle;
+}
+
+.animals__coop1 {
+    grid-area: animals__coop1;
+}
+
+.animals__coop2 {
+    grid-area: animals__coop2;
+}
+
+.animals__coop3 {
+    grid-area: animals__coop3;
+}
+
+.animals__coop4 {
+    grid-area: animals__coop4;
+}
+
+.animals__coop5 {
+    grid-area: animals__coop5;
+}
+
+.animals__coop6 {
+    grid-area: animals__coop6;
+}
+
+.animals__coop7 {
+    grid-area: animals__coop7;
+}
+
+.animals__coop8 {
+    grid-area: animals__coop8;
+}
+
+.animals__coop__item1 {
+    grid-area: animals__coop__item1;
+}
+
+.animals__coop__item2 {
+    grid-area: animals__coop__item2;
+}
+
+.animals__coop__item3 {
+    grid-area: animals__coop__item3;
+}
+
+.animals__coop__item4 {
+    grid-area: animals__coop__item4;
+}
+
+.animals__coop__item5 {
+    grid-area: animals__coop__item5;
+}
+
+.animals__coop__item6 {
+    grid-area: animals__coop__item6;
+}
+
+.animals__coop__item7 {
+    grid-area: animals__coop__item7;
+}
+
+.animals__coop__item8 {
+    grid-area: animals__coop__item8;
+}
+
+.animals__barn1 {
+    grid-area: animals__barn1;
+}
+
+.animals__barn2 {
+    grid-area: animals__barn2;
+}
+
+.animals__barn3 {
+    grid-area: animals__barn3;
+}
+
+.animals__barn4 {
+    grid-area: animals__barn4;
+}
+
+.animals__barn5 {
+    grid-area: animals__barn5;
+}
+
+.animals__barn6 {
+    grid-area: animals__barn6;
+}
+
+.animals__barn__item1 {
+    grid-area: animals__barn__item1;
+}
+
+.animals__barn__item2 {
+    grid-area: animals__barn__item2;
+}
+
+.animals__barn__item3 {
+    grid-area: animals__barn__item3;
+}
+
+.animals__barn__item4 {
+    grid-area: animals__barn__item4;
+}
+
+.animals__barn__item5 {
+    grid-area: animals__barn__item5;
+}
+
+.animals__barn__item6 {
+    grid-area: animals__barn__item6;
+}
+
+.barn__animals__tittle{
+    grid-area: barn__animals__tittle;
+}
+
+.section__villager__M {
+    font-size: 10px;
+    background-image: url(./../assets/img/background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    align-items: center;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+    grid-template-areas: 
+        ". . . . villager__tittle villager__tittle . . . ."
+        ". . villager__p villager__p villager__p villager__p villager__p villager__p . ."
+        ". . character__m__tittle character__m__tittle character__m__tittle character__m__tittle character__m__tittle character__m__tittle . ."
+        ". . character__m1 character__m2 character__m3 character__m4 character__m5 character__m6 . ."
+        ". . character__Item__m1 character__Item__m2 character__Item__m3 character__Item__m4 character__Item__m5 character__Item__m6 . ."
+        ". . character__m7 character__m8 character__m9 character__m10 character__m11 character__m12 . ."
+        ". . character__Item__m7 character__Item__m8 character__Item__m9 character__Item__m10 character__Item__m11 character__Item__m12 . ."
+}
+
+.section__villager__M img {
+    max-width: 100px;
+}
+
+.villager__tittle {
+    grid-area: villager__tittle;
+}
+
+.villager__p {
+    grid-area: villager__p;
+}
+
+.character__m1 {
+    grid-area: character__m1;
+}
+
+.character__m2 {
+    grid-area: character__m2;
+}
+
+.character__m3 {
+    grid-area: character__m3;
+}
+
+.character__m4 {
+    grid-area: character__m4;
+}
+
+.character__m5 {
+    grid-area: character__m5;
+}
+
+.character__m6 {
+    grid-area: character__m6;
+}
+
+.character__m7 {
+    grid-area: character__m7;
+}
+
+.character__m8 {
+    grid-area: character__m8;
+}
+
+.character__m9 {
+    grid-area: character__m9;
+}
+
+.character__m10 {
+    grid-area: character__m10;
+}
+
+.character__m11 {
+    grid-area: character__m11;
+}
+
+.character__m12 {
+    grid-area: character__m12;
+}
+
+.character__Item__m1 {
+    grid-area: character__Item__m1;
+}
+
+.character__Item__m2 {
+    grid-area: character__Item__m2;
+}
+
+.character__Item__m3 {
+    grid-area: character__Item__m3;
+}
+
+.character__Item__m4 {
+    grid-area: character__Item__m4;
+}
+
+.character__Item__m5 {
+    grid-area: character__Item__m5;
+}
+
+.character__Item__m6 {
+    grid-area: character__Item__m6;
+}
+
+.character__Item__m7 {
+    grid-area: character__Item__m7;
+}
+
+.character__Item__m8 {
+    grid-area: character__Item__m8;
+}
+
+.character__Item__m9 {
+    grid-area: character__Item__m9;
+}
+
+.character__Item__m10 {
+    grid-area: character__Item__m10;
+}
+
+.character__Item__m11 {
+    grid-area: character__Item__m11;
+}
+
+.character__Item__m12 {
+    grid-area: character__Item__m12;
+}
+
+.character__m__tittle{
+    grid-area: character__m__tittle;
+}
+
+.section__item__img {
+    max-width: 100%;
+}
+
+.section__crops {
+    font-size: 10px;
+    background-image: url(./../assets/img/background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    align-items: center;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+    grid-template-areas: 
+    ". . . . crops__tittle crops__tittle . . . ."
+    ". . crops__p crops__p crops__p crops__p crops__p crops__p . ."
+    ". . . . crop__spring__tittle crop__spring__tittle . . . ."
+    ". . spring1 spring2 spring3 spring4 spring5 spring6 . ."
+    ". . spring__item1 spring__item2 spring__item3 spring__item4 spring__item5 spring__item6 . ."
+    ". . spring7 spring8 spring9 spring10 spring11 spring12 . ."
+    ". . spring__item7 spring__item8 spring__item9 spring__item10 spring__item11 spring__item12 . ."
+}
+
+.crops__tittle {
+    grid-area: crops__tittle;
+}
+
+.crops__p {
+    grid-area: crops__p;
+}
+
+.crop__spring__tittle {
+    grid-area: crop__spring__tittle;
+}
+
+.spring1 {
+    grid-area: spring1;
+}
+
+.spring2 {
+    grid-area: spring2;
+}
+
+.spring3 {
+    grid-area: spring3;
+}
+
+.spring4 {
+    grid-area: spring4;
+}
+
+.spring5 {
+    grid-area: spring5;
+}
+
+.spring6 {
+    grid-area: spring6;
+}
+
+.spring7 {
+    grid-area: spring7;
+}
+
+.spring8 {
+    grid-area: spring8;
+}
+
+.spring9 {
+    grid-area: spring9;
+}
+
+.spring10 {
+    grid-area: spring10;
+}
+
+.spring11 {
+    grid-area: spring11;
+}
+
+.spring12 {
+    grid-area: spring12;
+}
+
+.spring__item1 {
+    grid-area: spring__item1;
+}
+
+.spring__item2 {
+    grid-area: spring__item2;
+}
+
+.spring__item3 {
+    grid-area: spring__item3;
+}
+
+.spring__item4 {
+    grid-area: spring__item4;
+}
+
+.spring__item5 {
+    grid-area: spring__item5;
+}
+
+.spring__item6 {
+    grid-area: spring__item6;
+}
+
+.spring__item7 {
+    grid-area: spring__item7;
+}
+
+.spring__item8 {
+    grid-area: spring__item8;
+}
+
+.spring__item9 {
+    grid-area: spring__item9;
+}
+
+.spring__item10 {
+    grid-area: spring__item10;
+}
+
+.spring__item11 {
+    grid-area: spring__item11;
+}
+
+.spring__item12 {
+    grid-area: spring__item12;
+}
+
+.section__item__tittle,
+.farm__coop__tittle,
+.farm__barn__tittle,
+.farm__animals__tittle,
+.farm__storage__tittle,
+.farm__Cabins__tittle,
+.farm__misc__tittle,
+.coop__animals__tittle,
+.barn__animals__tittle,
+.character__m__tittle,
+.crops__tittle,
+.crop__spring__tittle {
+    color: goldenrod;
+    font-size: 20px;
+    text-align: center;
+}
+
+.section__item__paragraph {
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+.section__item__img,
+.section__item__tittle,
+.section__item__paragraph {
+margin-bottom: 5px;
+}
+
+/* Sections End */
+/* Footer */
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style-type: none;
+    background-color: rgb(23, 90, 167);
+    font-weight: 900;
+    font-size: 25px;
+    padding-block: 15px;
+    position:sticky;
+    top: 0;
+}
+
+.footer__item {
+    margin-inline: 15px;
+    color: yellow;
+}
+
+.footer__item a {
+    color: yellow;
+    text-decoration: none;
+}
+
+.footer__item.active a, 
+.footer__item a:hover {
+    color: rgb(110, 110, 9);
+}
+
+/* Footer End */
+
+@media screen and (max-width: 900px) {
+
+    .section {
+        flex-wrap: wrap;
+    }
+    .section__farm {
+        width: 100%;
+        height: 150vh;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(13, 1fr);
+        grid-template-areas: 
+            ". . farm__tittle farm__tittle . ."
+            ". farm__p farm__p farm__p farm__p ."
+            ". farm__p farm__p farm__p farm__p ."
+            ". farm__p farm__p farm__p farm__p ."
+            "farm__coop1         farm__coop2          farm__coop3 farm__barn1         farm__barn2          farm__barn3"
+            "farm__coop__item1     farm__coop__item2    farm__coop__item3 farm__barn__item1   farm__barn__item2    farm__barn__item3"
+            "farm__coop__tittle  farm__coop__tittle   farm__coop__tittle farm__barn__tittle  farm__barn__tittle   farm__barn__tittle"
+            "farm__animals1   farm__animals2   farm__animals3 farm__storage1   farm__storage2   farm__storage3"                        
+            "farm__animals__item1   farm__animals__item2   farm__animals__item3 farm__storage__item1   farm__storage__item2   farm__storage__item3"      
+            "farm__animals__tittle   farm__animals__tittle   farm__animals__tittle farm__storage__tittle   farm__storage__tittle   farm__storage__tittle"   
+            "farm__Cabins1            farm__Cabins2         farm__Cabins3 farm__misc1   farm__misc2   farm__misc3"
+            "farm__Cabins__item1   farm__Cabins__item2    farm__Cabins__item3 farm__misc__item1   farm__misc__item2   farm__misc__item3"
+            "farm__Cabins__tittle   farm__Cabins__tittle   farm__Cabins__tittle farm__misc__tittle   farm__misc__tittle   farm__misc__tittle";
+    }
+    .section__animals {
+        width: 100%;
+        height: 100vh;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(12, 1fr);
+        grid-template-areas: 
+            ". . animals__Tittle animals__Tittle . ."
+            ". animals__P animals__P animals__P animals__P ."
+            ". animals__P animals__P animals__P animals__P ."
+            ". animals__P animals__P animals__P animals__P ."
+            "animals__coop1 animals__coop2 animals__coop3 animals__coop4 animals__coop5 animals__coop6"
+            "animals__coop__item1 animals__coop__item2 animals__coop__item3 animals__coop__item4 animals__coop__item5 animals__coop__item6"
+            ". . animals__coop7 animals__coop8 . ."
+            ". . animals__coop__item7 animals__coop__item8 . ."
+            ". . coop__animals__tittle coop__animals__tittle . ."
+            "animals__barn1 animals__barn2 animals__barn3 animals__barn4 animals__barn5 animals__barn6"
+            "animals__barn__item1 animals__barn__item2 animals__barn__item3 animals__barn__item4 animals__barn__item5 animals__barn__item6"
+            ". . barn__animals__tittle barn__animals__tittle . .";
+    }
+    .section__villager__M {
+        width: 100%;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(10, 1fr);
+        grid-template-areas: 
+            ". . villager__tittle villager__tittle . ."
+            ". villager__p villager__p villager__p villager__p ."
+            ". villager__p villager__p villager__p villager__p ."
+            ". character__m__tittle character__m__tittle  character__m__tittle character__m__tittle ."
+            ". character__m1 character__m2 character__m3 character__m4 ."
+            ". character__Item__m1 character__Item__m2 character__Item__m3 character__Item__m4 ."
+            ". character__m5 character__m6 character__m7 character__m8 ."
+            ". character__Item__m5 character__Item__m6 character__Item__m7 character__Item__m8 ."
+            ". character__m9 character__m10 character__m11 character__m12 ."
+            ". character__Item__m9 character__Item__m10 character__Item__m11 character__Item__m12 ."
+    }    
+
+}
+
+@media screen and (max-width: 600px) {
+    
+    .section__farm {
+        width: 100%;
+        height: 300vh;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(22, 1fr);
+        grid-template-areas: 
+            ".         farm__tittle          . "
+            "farm__p         farm__p          farm__p "
+            "farm__p         farm__p          farm__p "
+            "farm__p         farm__p          farm__p "
+            "farm__coop1         farm__coop2          farm__coop3 "
+            "farm__coop__item1     farm__coop__item2    farm__coop__item3"
+            "farm__coop__tittle  farm__coop__tittle   farm__coop__tittle"
+            "farm__barn1         farm__barn2          farm__barn3"
+            "farm__barn__item1   farm__barn__item2    farm__barn__item3"
+            "farm__barn__tittle  farm__barn__tittle   farm__barn__tittle"
+            "farm__animals1   farm__animals2   farm__animals3"                        
+            "farm__animals__item1   farm__animals__item2   farm__animals__item3"    
+            "farm__animals__tittle   farm__animals__tittle   farm__animals__tittle"   
+            "farm__storage1   farm__storage2   farm__storage3"                        
+            "farm__storage__item1   farm__storage__item2   farm__storage__item3"      
+            "farm__storage__tittle   farm__storage__tittle   farm__storage__tittle"   
+            "farm__Cabins1            farm__Cabins2         farm__Cabins3"
+            "farm__Cabins__item1   farm__Cabins__item2    farm__Cabins__item3"
+            "farm__Cabins__tittle   farm__Cabins__tittle   farm__Cabins__tittle"
+            "farm__misc1   farm__misc2   farm__misc3"
+            "farm__misc__item1   farm__misc__item2   farm__misc__item3"
+            "farm__misc__tittle   farm__misc__tittle   farm__misc__tittle";
+    }
+    .section__animals {
+        width: 100%;
+        height: 170vh;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(16, 1fr);
+        grid-template-areas: 
+            ". animals__Tittle ."
+            "animals__P animals__P animals__P"
+            "animals__P animals__P animals__P"
+            "animals__P animals__P animals__P"
+            "animals__coop1 animals__coop2 animals__coop3"
+            "animals__coop__item1 animals__coop__item2 animals__coop__item3"
+            "animals__coop4 animals__coop5 animals__coop6"
+            "animals__coop__item4 animals__coop__item5 animals__coop__item6"
+            "animals__coop7 animals__coop8 ."
+            "animals__coop__item7 animals__coop__item8 . "
+            "coop__animals__tittle coop__animals__tittle coop__animals__tittle"
+            "animals__barn1 animals__barn2 animals__barn3"
+            "animals__barn__item1 animals__barn__item2 animals__barn__item3"
+            "animals__barn4 animals__barn5 animals__barn6"
+            "animals__barn__item4 animals__barn__item5 animals__barn__item6"
+            "barn__animals__tittle barn__animals__tittle barn__animals__tittle";
+    }
+    .section__crops {
+        width: 100%;
+        height: 110vh;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(11, 1fr);
+        grid-template-areas: 
+        ". . crops__tittle crops__tittle . ."
+        ". crops__p crops__p crops__p crops__p ."
+        ". crops__p crops__p crops__p crops__p ."
+        ". crops__p crops__p crops__p crops__p ."
+        ". . crop__spring__tittle crop__spring__tittle . ."
+        ". spring1 spring2 spring3 spring4 ."
+        ". spring__item1 spring__item2 spring__item3 spring__item4 ."
+        ". spring5 spring6 spring7 spring8 ."
+        ". spring__item5 spring__item6 spring__item7 spring__item8 ."
+        ". spring9 spring10 spring11 spring12 ."
+        ". spring__item9 spring__item10 spring__item11 spring__item12 ."
+    }    
+    .section__villager__M {
+        width: 100%;
+        height: 140vh;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(13, 1fr);
+        grid-template-areas: 
+            ". villager__tittle ."
+            "villager__p villager__p villager__p"
+            "villager__p villager__p villager__p"
+            "villager__p villager__p villager__p"
+            "character__m__tittle character__m__tittle  character__m__tittle"
+            "character__m1 character__m2 character__m3"
+            "character__Item__m1 character__Item__m2 character__Item__m3"
+            "character__m4 character__m5 character__m6"
+            "character__Item__m4 character__Item__m5 character__Item__m6"
+            "character__m7 character__m8 character__m9"
+            "character__Item__m7 character__Item__m8 character__Item__m9"
+            "character__m10 character__m11 character__m12"
+            "character__Item__m10 character__Item__m11 character__Item__m12"
+    }    
+
+}
