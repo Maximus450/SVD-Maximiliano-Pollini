@@ -10,7 +10,8 @@
 /* Navigation */
 
 .header {
-    background-color: rgb(23, 90, 167);
+    background: rgb(0,187,255);
+    background: linear-gradient(0deg, rgba(0,187,255,1) 0%, rgba(6,27,74,1) 100%);
     display: flex;
     justify-content: space-between;
 }
@@ -43,6 +44,7 @@
 .menu__item a {
     color: yellow;
     text-decoration: none;
+    transition: all 0.5s;
 }
 
 .menu__item.active a, 
@@ -120,6 +122,12 @@
     flex-direction: column;
     gap: 15px;
     padding: 5px;
+    transition: 0.25s;
+}
+
+.section__item:hover {
+    transform: scale(1.2) translateY(-50px);
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
 }
 
 .section__farm {
@@ -771,6 +779,32 @@
 margin-bottom: 5px;
 }
 
+.spring,
+.farm__coop,
+.farm__barn,
+.farm__animals,
+.farm__storage,
+.farm__misc,
+.farm__Cabins,
+.animals__coop,
+.animals__barn,
+.character__m {
+    transition: all .25s;
+}
+
+.spring:hover,
+.farm__coop:hover,
+.farm__barn:hover,
+.farm__animals:hover,
+.farm__storage:hover,
+.farm__misc:hover,
+.farm__Cabins:hover,
+.animals__coop:hover,
+.animals__barn:hover,
+.character__m:hover {
+    transform: scale(1.2);
+}
+
 /* Sections End */
 /* Footer */
 
@@ -779,7 +813,8 @@ margin-bottom: 5px;
     align-items: center;
     justify-content: space-between;
     list-style-type: none;
-    background-color: rgb(23, 90, 167);
+    background: rgb(6,27,74);
+    background: linear-gradient(0deg, rgba(6,27,74,1) 3%, rgba(0,187,255,1) 100%);
     font-weight: 900;
     font-size: 25px;
     padding-block: 15px;
@@ -795,6 +830,7 @@ margin-bottom: 5px;
 .footer__item a {
     color: yellow;
     text-decoration: none;
+    transition: all 0.5s;
 }
 
 .footer__item.active a, 
