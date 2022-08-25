@@ -5,69 +5,110 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./../Styles/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="./../css/style.css">
 </head>
 <body>
     <header class="header">
-        <nav class="navigation">
-            <ul class="menu">
-                <li class="menu__item">
-                    <a href="./../index.html">Home</a>
-                </li>
-                <li class="menu__item active">
-                    <a href="./../pages/villagers.html">Villagers</a>
-                </li>
-                <li class="menu__item">
-                    <a href="./../pages/crops.html">Crops</a>
-                </li>
-                <li class="menu__item">
-                    <a href="./../pages/animals.html">Animals</a>
-                </li>
-                <li class="menu__item">
-                    <a href="./../pages/farm.html">Farm</a>
-                </li>    
-            </ul>
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand">
+                    <img src="./../assets/img/Main_Logo.png" alt="" width="150" height="54">
+                </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="./../index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./../pages/villagers.html">Villagers</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./../pages/crops.html">Crops</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./../pages/animals.html">Animals</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./../pages/farm.html">Farm</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
-        <img class="menu__tittle" src="./../assets/img/Main_Logo.png" alt="Stardew Valley">
     </header>
-    <section>
-        <div class="section__villager__M">
-            <h1 class="villager__tittle">
-                Villagers
-            </h1>
-            <p class="villager__p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, illum veniam, odio tenetur sunt unde accusantium odit at tempora maiores, aliquid quibusdam suscipit natus. Illo, iusto cupiditate distinctio soluta nisi itaque explicabo quos impedit perspiciatis commodi eum voluptatum voluptatem magni neque ducimus modi laboriosam? Iste aliquid accusantium sapiente similique nesciunt quae, expedita repellat temporibus in unde dolores neque sequi laborum nam doloribus harum totam pariatur eaque quasi quo at nulla?.</p>
-            <h1 class="character__m__tittle">Marriage Candidates</h1>
-            <img class="character__m character__m1" src="./../assets/img/Characters M/Abigail.png" alt="Abigail">
-            <h1 class="character__Item__m character__Item__m1">Abigail</h1>
-            <img class="character__m character__m2" src="./../assets/img/Characters M/Alex.png" alt="Alex">
-            <h1 class="character__Item__m character__Item__m2">Alex</h1>
-            <img class="character__m character__m3" src="./../assets/img/Characters M/Elliott.png" alt="Elliott">
-            <h1 class="character__Item__m character__Item__m3">Elliott</h1>
-            <img class="character__m character__m4" src="./../assets/img/Characters M/Emily.png" alt="Emily">
-            <h1 class="character__Item__m character__Item__m4">Emily</h1>
-            <img class="character__m character__m5" src="./../assets/img/Characters M/Haley.png" alt="Haley">
-            <h1 class="character__Item__m character__Item__m5">Haley</h1>
-            <img class="character__m character__m6" src="./../assets/img/Characters M/Harvey.png" alt="Harvey">
-            <h1 class="character__Item__m character__Item__m6">Harvey</h1>
-            <img class="character__m character__m7" src="./../assets/img/Characters M/Leah.png" alt="Leah">
-            <h1 class="character__Item__m character__Item__m7">Leah</h1>
-            <img class="character__m character__m8" src="./../assets/img/Characters M/Maru.png" alt="Maru">
-            <h1 class="character__Item__m character__Item__m8">Maru</h1>
-            <img class="character__m character__m9" src="./../assets/img/Characters M/Sam.png" alt="Sam">
-            <h1 class="character__Item__m character__Item__m9">Sam</h1>
-            <img class="character__m character__m10" src="./../assets/img/Characters M/Sebastian.png" alt="Sebastian">
-            <h1 class="character__Item__m character__Item__m10">Sebastian</h1>
-            <img class="character__m character__m11" src="./../assets/img/Characters M/Shane.png" alt="Shane">
-            <h1 class="character__Item__m character__Item__m11">Shane</h1>
-            <img class="character__m character__m12" src="./../assets/img/Characters M/Penny.png" alt="Penny">
-            <h1 class="character__Item__m character__Item__m12">Penny</h1>
+    <section class="section">
+        <div class="text-center">
+            <h1>Villagers</h1>
+            <p class="mx-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit recusandae dignissimos dicta fugiat deleniti earum voluptates accusantium sint doloribus beatae? Temporibus quas porro obcaecati dignissimos ut repellat unde nesciunt earum dolorem velit est, blanditiis quam fugit aspernatur veniam quasi neque nemo placeat modi tenetur voluptates perferendis laborum sequi. Accusamus, cum eius. Doloremque architecto enim quae vel, minima libero cum totam beatae doloribus, repudiandae officia, eos iste error asperiores. Amet nobis, repellendus sunt numquam necessitatibus totam enim illo eaque ab praesentium laborum sit qui alias hic deleniti! Numquam, similique, repellat facilis non veniam, saepe sit explicabo ullam recusandae odio ea adipisci.</p>
+        </div>
+        <h1 class="text-center">Marriage Candidates</h1>
+        <div class="container text-center">
+            <div class="row">
+                <div class="col">
+                    <img src="./../assets/img/Characters M/Abigail.png" alt="Abigail">
+                    <h1 class="fs-3">Abigail</h1>
+                </div>
+                <div class="col">
+                    <img src="./../assets/img/Characters M/Alex.png" alt="Alex">
+                    <h1 class="fs-3">Alex</h1>
+                </div>
+                <div class="col">                    
+                    <img src="./../assets/img/Characters M/Elliott.png" alt="Elliott">
+                    <h1 class="fs-3">Elliott</h1>
+                </div>
+                <div class="col">
+                    <img src="./../assets/img/Characters M/Emily.png" alt="Emily">
+                    <h1 class="fs-3">Emily</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <img src="./../assets/img/Characters M/Haley.png" alt="Haley">
+                    <h1 class="fs-3">Haley</h1>
+                </div>
+                <div class="col">
+                    <img src="./../assets/img/Characters M/Harvey.png" alt="Harvey">
+                    <h1 class="fs-3">Harvey</h1>
+                </div>
+                <div class="col">                    
+                    <img src="./../assets/img/Characters M/Leah.png" alt="Leah">
+                    <h1 class="fs-3">Leah</h1>
+                </div>
+                <div class="col">
+                    <img src="./../assets/img/Characters M/Maru.png" alt="Maru">
+                    <h1 class="fs-3">Maru</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <img src="./../assets/img/Characters M/Sam.png" alt="Sam">
+                    <h1 class="fs-3">Sam</h1>
+                </div>
+                <div class="col">
+                    <img src="./../assets/img/Characters M/Sebastian.png" alt="Sebastian">
+                    <h1 class="fs-3">Sebastian</h1>
+                </div>
+                <div class="col">                    
+                    <img src="./../assets/img/Characters M/Shane.png" alt="Shane">
+                    <h1 class="fs-3">Shane</h1>
+                </div>
+                <div class="col">
+                    <img src="./../assets/img/Characters M/Penny.png" alt="Penny">
+                    <h1 class="fs-3">Penny</h1>
+                </div>
+            </div>
         </div>
     </section>
-    <footer class="footer">
-        <div class="footer__item">
-            <a href="./../pages/contact.html">Contact</a>
+    <footer class="navbar bg-light">
+        <div class="container-fluid">
+            <a href="./../pages/contact.html" class="nav-link">Contact</a>
+            <h1 class="d-flex fs-5">All rights reserved</h1>
         </div>
-        <h6 class="footer__item">All rights reserved</h6>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 </body>
 </html>

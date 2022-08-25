@@ -5,86 +5,140 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./../Styles/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="./../css/style.css">
 </head>
 <body>
+
     <header class="header">
-        <nav class="navigation">
-            <ul class="menu">
-                <li class="menu__item">
-                    <a href="./../index.html">Home</a>
-                </li>
-                <li class="menu__item">
-                    <a href="./../pages/villagers.html">Villagers</a>
-                </li>
-                <li class="menu__item">
-                    <a href="./../pages/crops.html">Crops</a>
-                </li>
-                <li class="menu__item">
-                    <a href="./../pages/animals.html">Animals</a>
-                </li>
-                <li class="menu__item active">
-                    <a href="./../pages/farm.html">Farm</a>
-                </li>    
-            </ul>
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand">
+                    <img src="./../assets/img/Main_Logo.png" alt="" width="150" height="54">
+                </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="./../index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./../pages/villagers.html">Villagers</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./../pages/crops.html">Crops</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./../pages/animals.html">Animals</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./../pages/farm.html">Farm</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
-        <img class="menu__tittle" src="./../assets/img/Main_Logo.png" alt="Stardew Valley">
     </header>
-    <section>
-        <div class="section__farm">
-            <h1 class="farm__tittle">
-                Farm
-            </h1>
-            <p class="farm__p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, illum veniam, odio tenetur sunt unde accusantium odit at tempora maiores, aliquid quibusdam suscipit natus. Illo, iusto cupiditate distinctio soluta nisi itaque explicabo quos impedit perspiciatis commodi eum voluptatum voluptatem magni neque ducimus modi laboriosam? Iste aliquid accusantium sapiente similique nesciunt quae, expedita repellat temporibus in unde dolores neque sequi laborum nam doloribus harum totam pariatur eaque quasi quo at nulla?.</p>
-            <img class="farm__coop farm__coop1" src="./../assets/img/farm/Coop-Coop.png" alt="Coop">
-            <h1 class="farm__coop__item farm__coop__item1">Coop</h1>
-            <img class="farm__coop farm__coop2" src="./../assets/img/farm/Coop-Big_Coop.png" alt="Big Coop">
-            <h1 class="farm__coop__item farm__coop__item2">Big Coop</h1>
-            <img class="farm__coop farm__coop3" src="./../assets/img/farm/Coop-Deluxe_Coop.png" alt="Deluxe Coop">
-            <h1 class="farm__coop__item farm__coop__item3">Deluxe Coop</h1>
-            <h1 class="farm__coop__tittle">Coop</h1>
-            <img class="farm__barn farm__barn1" src="./../assets/img/farm/Barn-Barn.png" alt="Barn">
-            <h1 class="farm__barn__item farm__barn__item1">Barn</h1>
-            <img class="farm__barn farm__barn2" src="./../assets/img/farm/Barn-Big_Barn.png" alt="Big Barn">
-            <h1 class="farm__barn__item farm__barn__item2">Big Barn</h1>
-            <img class="farm__barn farm__barn3" src="./../assets/img/farm/Barn-Deluxe_Barn.png" alt="Deluxe Barn">
-            <h1 class="farm__barn__item farm__barn__item3">Deluxe Barn</h1>
-            <h1 class="farm__barn__tittle">Barn</h1>                        
-            <img class="farm__animals farm__animals1" src="./../assets/img/farm/Animals-Fish_Pond.png" alt="Fish Pond">
-            <h1 class="farm__animals__item farm__animals__item1">Fish Pond</h1>
-            <img class="farm__animals farm__animals2" src="./../assets/img/farm/Animals-Horse_Stable.png" alt="Horse Stable">
-            <h1 class="farm__animals__item farm__animals__item2">Horse Stable</h1>
-            <img class="farm__animals farm__animals3" src="./../assets/img/farm/Animals-Slime_Hutch.png" alt="Slime Hutch">
-            <h1 class="farm__animals__item farm__animals__item3">Slime Hutch</h1>
-            <h1 class="farm__animals__tittle">Animals</h1>
-            <img class="farm__storage farm__storage1" src="./../assets/img/farm/Storage-Shed.png" alt="Shed">
-            <h1 class="farm__storage__item farm__storage__item1">Shed</h1>
-            <img class="farm__storage farm__storage2" src="./../assets/img/farm/Storage-Big_Shed.png" alt="Big Shed">
-            <h1 class="farm__storage__item farm__storage__item2">Big Shed</h1>
-            <img class="farm__storage farm__storage3" src="./../assets/img/farm/Storage-Silo.png" alt="Silo">
-            <h1 class="farm__storage__item farm__storage__item3">Silo</h1>
-            <h1 class="farm__storage__tittle">Storage</h1>
-            <img class="farm__misc farm__misc1" src="./../assets/img/farm/Miscellaneous-Mill.png" alt="Mill">
-            <h1 class="farm__misc__item farm__misc__item1">Mill</h1>
-            <img class="farm__misc farm__misc2" src="./../assets/img/farm/Miscellaneous-Well.png" alt="Well">
-            <h1 class="farm__misc__item farm__misc__item2">Well</h1>
-            <img class="farm__misc farm__misc3" src="./../assets/img/farm/Miscellaneous-ShippingBox.png" alt="Shipping Box">
-            <h1 class="farm__misc__item farm__misc__item3">Shipping Box</h1>
-            <h1 class="farm__misc__tittle">Miscellaneous</h1>
-            <img class="farm__Cabins farm__Cabins1" src="./../assets/img/farm/Cabins-Log_Cabin_Stage_1.png" alt="Log Cabin">
-            <h1 class="farm__Cabins__item farm__Cabins__item1">Log Cabin</h1>
-            <img class="farm__Cabins farm__Cabins2" src="./../assets/img/farm/Cabins-Plank_Cabin_Stage_1.png" alt="Plank Cabin">
-            <h1 class="farm__Cabins__item farm__Cabins__item2">Plank Cabin</h1>
-            <img class="farm__Cabins farm__Cabins3" src="./../assets/img/farm/Cabins-Stone_Cabin_Stage_1.png" alt="Stone Cabin">
-            <h1 class="farm__Cabins__item farm__Cabins__item3">Stone Cabin</h1>
-            <h1 class="farm__Cabins__tittle">Cabins</h1>
+    
+    <section class="section">
+        <div class="text-center">
+            <h1>Farm</h1>
+            <p class="mx-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, illum veniam, odio tenetur sunt unde accusantium odit at tempora maiores, aliquid quibusdam suscipit natus. Illo, iusto cupiditate distinctio soluta nisi itaque explicabo quos impedit perspiciatis commodi eum voluptatum voluptatem magni neque ducimus modi laboriosam? Iste aliquid accusantium sapiente similique nesciunt quae, expedita repellat temporibus in unde dolores neque sequi laborum nam doloribus harum totam pariatur eaque quasi quo at nulla?.</p>
+        </div>
+        <div class="container text-center">
+            <div class="row">
+                <div class="col">
+                    <img src="./../assets/img/farm/Coop-Coop.png" alt="Coop">
+                    <h1 class="fs-3">Coop</h1>
+                </div>
+                <div class="col">
+                    <img src="./../assets/img/farm/Coop-Big_Coop.png" alt="Big Coop">
+                    <h1 class="fs-3">Big Coop</h1>
+                </div>
+                <div class="col">                    
+                    <img src="./../assets/img/farm/Coop-Deluxe_Coop.png" alt="Deluxe Coop">
+                    <h1 class="fs-3">Deluxe Coop</h1>
+                </div>
+                <div class="col">
+                    <img src="./../assets/img/farm/Barn-Barn.png" alt="Barn">
+                    <h1 class="fs-3">Barn</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <img src="./../assets/img/farm/Barn-Big_Barn.png" alt="Big Barn">
+                    <h1 class="fs-3">Big Barn</h1>
+                </div>
+                <div class="col">
+                    <img src="./../assets/img/farm/Barn-Deluxe_Barn.png" alt="Deluxe Barn">
+                    <h1 class="fs-3">Deluxe Barn</h1>
+                </div>
+                <div class="col">                    
+                    <img src="./../assets/img/farm/Animals-Fish_Pond.png" alt="Fish Pond">
+                    <h1 class="fs-3">Fish Pond</h1>
+                </div>
+                <div class="col">
+                    <img src="./../assets/img/farm/Animals-Horse_Stable.png" alt="Horse Stable">
+                    <h1 class="fs-3">Horse Stable</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <img src="./../assets/img/farm/Animals-Slime_Hutch.png" alt="Slime Hutch">
+                    <h1 class="fs-3">Slime Hutch</h1>
+                </div>
+                <div class="col">
+                    <img src="./../assets/img/farm/Storage-Shed.png" alt="Shed">
+                    <h1 class="fs-3">Shed</h1>
+                </div>
+                <div class="col">                    
+                    <img src="./../assets/img/farm/Storage-Big_Shed.png" alt="Big Shed">
+                    <h1 class="fs-3">Big Shed</h1>
+                </div>
+                <div class="col">
+                    <img src="./../assets/img/farm/Storage-Silo.png" alt="Silo">
+                    <h1 class="fs-3">Silo</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <img src="./../assets/img/farm/Miscellaneous-Mill.png" alt="Mill">
+                    <h1 class="fs-3">Mill</h1>
+                </div>
+                <div class="col">
+                    <img src="./../assets/img/farm/Miscellaneous-Well.png" alt="Well">
+                    <h1 class="fs-3">Well</h1>
+                </div>
+                <div class="col">                    
+                    <img src="./../assets/img/farm/Miscellaneous-ShippingBox.png" alt="Shipping Box">
+                    <h1 class="fs-3">Shipping Box</h1>
+                </div>
+                <div class="col">
+                    <img src="./../assets/img/farm/Cabins-Log_Cabin_Stage_1.png" alt="Log Cabin">
+                    <h1 class="fs-3">Log Cabin</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <img src="./../assets/img/farm/Cabins-Plank_Cabin_Stage_1.png" alt="Plank Cabin">
+                    <h1 class="fs-3">Plank Cabin</h1>
+                </div>
+                <div class="col">
+                    <img src="./../assets/img/farm/Cabins-Stone_Cabin_Stage_1.png" alt="Stone Cabin">
+                    <h1 class="fs-3">Stone Cabin</h1>
+                </div>
+            </div>
         </div>
     </section>
-    <footer class="footer">
-        <div class="footer__item">
-            <a href="./../pages/contact.html">Contact</a>
+
+    <footer class="navbar bg-light">
+        <div class="container-fluid">
+            <a href="./../pages/contact.html" class="nav-link">Contact</a>
+            <h1 class="d-flex fs-5">All rights reserved</h1>
         </div>
-        <h6 class="footer__item">All rights reserved</h6>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 </body>
 </html>

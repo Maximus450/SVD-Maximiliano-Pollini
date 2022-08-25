@@ -5,91 +5,98 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Page</title>
-    <link rel="stylesheet" href="./Styles/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
     <header class="header">
-        <nav class="navigation">
-            <ul class="menu">
-                <li class="menu__item active">
-                    <a href="./index.html">Home</a>
-                </li>
-                <li class="menu__item">
-                    <a href="./pages/villagers.html">Villagers</a>
-                </li>
-                <li class="menu__item">
-                    <a href="./pages/crops.html">Crops</a>
-                </li>
-                <li class="menu__item">
-                    <a href="./pages/animals.html">Animals</a>
-                </li>
-                <li class="menu__item">
-                    <a href="./pages/farm.html">Farm</a>
-                </li>    
-            </ul>
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand">
+                    <img src="./assets/img/Main_Logo.png" alt="" width="150" height="54">
+                </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/villagers.html">Villagers</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/crops.html">Crops</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/animals.html">Animals</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/farm.html">Farm</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
-        <img class="menu__tittle" src="./assets/img/Main_Logo.png" alt="Stardew Valley">
     </header>
-    <main class="main">
-        <div>
-            <h1 class="tittle">
+
+    <section class="section">
+        <div class="text-center">
+            <h1>
                 Stardew Valley
             </h1>
-            <p class="mainbox">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, illum veniam, odio tenetur sunt unde accusantium odit at tempora maiores, aliquid quibusdam suscipit natus. Illo, iusto cupiditate distinctio soluta nisi itaque explicabo quos impedit perspiciatis commodi eum voluptatum voluptatem magni neque ducimus modi laboriosam? Iste aliquid accusantium sapiente similique nesciunt quae, expedita repellat temporibus in unde dolores neque sequi laborum nam doloribus harum totam pariatur eaque quasi quo at nulla? Dicta ipsum expedita accusamus debitis dolorem, aut laborum sequi minus nobis, consectetur tempora excepturi eum distinctio quibusdam non laboriosam ad accusantium ipsam quia voluptate repellat soluta commodi! Dicta error iure dolorem veniam enim nemo obcaecati, ab repellat commodi ex modi autem accusamus quae quidem odit atque recusandae pariatur. Laborum odit dolorum consequatur, ratione, possimus nulla voluptatibus veniam iure vero voluptatem aut cumque officiis adipisci! Voluptate rerum modi, esse sunt deserunt repudiandae perferendis saepe ullam dignissimos itaque possimus? Quam iure harum perspiciatis dicta doloremque nihil cupiditate tenetur! Maiores in rem, architecto aspernatur dignissimos earum commodi assumenda consequatur ipsa aut! Sequi incidunt itaque aliquid facere quidem tenetur veritatis expedita asperiores quasi quia consectetur recusandae, nihil sed. Eos dolor neque aperiam nesciunt eligendi? Impedit, necessitatibus eligendi in modi aspernatur aliquam cupiditate sit nostrum.</p>
+            <p class="mx-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, illum veniam, odio tenetur sunt unde accusantium odit at tempora maiores, aliquid quibusdam suscipit natus. Illo, iusto cupiditate distinctio soluta nisi itaque explicabo quos impedit perspiciatis commodi eum voluptatum voluptatem magni neque ducimus modi laboriosam? Iste aliquid accusantium sapiente similique nesciunt quae, expedita repellat temporibus in unde dolores neque sequi laborum nam doloribus harum totam pariatur eaque quasi quo at nulla? Dicta ipsum expedita accusamus debitis dolorem, aut laborum sequi minus nobis, consectetur tempora excepturi eum distinctio quibusdam non laboriosam ad accusantium ipsam quia voluptate repellat soluta commodi! Dicta error iure dolorem veniam enim nemo obcaecati, ab repellat commodi ex modi autem accusamus quae quidem odit atque recusandae pariatur. Laborum odit dolorum consequatur, ratione, possimus nulla voluptatibus veniam iure vero voluptatem aut cumque officiis adipisci! Voluptate rerum modi, esse sunt deserunt repudiandae perferendis saepe ullam dignissimos itaque possimus? Quam iure harum perspiciatis dicta doloremque nihil cupiditate tenetur! Maiores in rem, architecto aspernatur dignissimos earum commodi assumenda consequatur ipsa aut! Sequi incidunt itaque aliquid facere quidem tenetur veritatis expedita asperiores quasi quia consectetur recusandae, nihil sed. Eos dolor neque aperiam nesciunt eligendi? Impedit, necessitatibus eligendi in modi aspernatur aliquam cupiditate sit nostrum.</p>
         </div>
-    </main>
-    <section class="section">
-        <div class="section__item">
-            <img class="section__item__img" src="./assets/img/farming.jpg" alt="Farming crops">
-            <h1 class="section__item__tittle">
-                Farming
-            </h1>
-            <p class="section__item__paragraph">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta accusamus possimus expedita. Expedita eveniet quaerat, qui vel ut ad doloremque facere eligendi id modi molestias aliquid asperiores, et excepturi velit aliquam ratione commodi exercitationem porro maxime ipsam odio corporis accusantium nisi! Qui dicta et itaque, minus tempora quo eaque vel aliquid voluptatum labore aliquam ea totam, nobis cupiditate alias nulla.
-            </p>
-        </div>
-        <div class="section__item">
-            <img class="section__item__img" src="./assets/img/animals.jpg" alt="Raising animals">
-            <h1 class="section__item__tittle">
-                Animals
-            </h1>
-            <p class="section__item__paragraph">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta accusamus possimus expedita. Expedita eveniet quaerat, qui vel ut ad doloremque facere eligendi id modi molestias aliquid asperiores, et excepturi velit aliquam ratione commodi exercitationem porro maxime ipsam odio corporis accusantium nisi! Qui dicta et itaque, minus tempora quo eaque vel aliquid voluptatum labore aliquam ea totam, nobis cupiditate alias nulla.
-            </p>
-        </div>
-        <div class="section__item">
-            <img class="section__item__img" src="./assets/img/fishing.jpg" alt="Fishing in a river">
-            <h1 class="section__item__tittle">
-                Fishing
-            </h1>
-            <p class="section__item__paragraph">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta accusamus possimus expedita. Expedita eveniet quaerat, qui vel ut ad doloremque facere eligendi id modi molestias aliquid asperiores, et excepturi velit aliquam ratione commodi exercitationem porro maxime ipsam odio corporis accusantium nisi! Qui dicta et itaque, minus tempora quo eaque vel aliquid voluptatum labore aliquam ea totam, nobis cupiditate alias nulla.
-            </p>
-        </div>
-        <div class="section__item">
-            <img class="section__item__img" src="./assets/img/mining.jpg" alt="Mining gold in a cave">
-            <h1 class="section__item__tittle">
-                Mining
-            </h1>
-            <p class="section__item__paragraph">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta accusamus possimus expedita. Expedita eveniet quaerat, qui vel ut ad doloremque facere eligendi id modi molestias aliquid asperiores, et excepturi velit aliquam ratione commodi exercitationem porro maxime ipsam odio corporis accusantium nisi! Qui dicta et itaque, minus tempora quo eaque vel aliquid voluptatum labore aliquam ea totam, nobis cupiditate alias nulla.
-            </p>
-        </div>
-        <div class="section__item">
-            <img class="section__item__img" src="./assets/img/artisan-goods.jpg" alt="Manufacturing wine and preserved foods">
-            <h1 class="section__item__tittle">
-                Manufacturing
-            </h1>
-            <p class="section__item__paragraph">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta accusamus possimus expedita. Expedita eveniet quaerat, qui vel ut ad doloremque facere eligendi id modi molestias aliquid asperiores, et excepturi velit aliquam ratione commodi exercitationem porro maxime ipsam odio corporis accusantium nisi! Qui dicta et itaque, minus tempora quo eaque vel aliquid voluptatum labore aliquam ea totam, nobis cupiditate alias nulla.
-            </p>
+        <div class="container">
+            <div class="row mt-3 gap-3 gap-md-0 px-5 justify-content-center">
+                <div class="card col-md-4">
+                    <img src="./assets/img/farming.jpg" class="card-img-top" alt="Farming crops">
+                    <div class="card-body">
+                        <h5>Farming</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                </div>
+                <div class="card col-md-4">
+                    <img src="./assets/img/animals.jpg" class="card-img-top" alt="Raising animals">
+                    <div class="card-body">
+                        <h5>Animals</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                </div>
+                <div class="card col-md-4">
+                    <img src="./assets/img/fishing.jpg" class="card-img-top" alt="Fishing in a river">
+                    <div class="card-body">
+                        <h5>Fishing</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-3 gap-3 gap-md-0 justify-content-center">
+                <div class="card col-md-4">
+                    <img src="./assets/img/mining.jpg" class="card-img-top" alt="Mining gold in a cave">
+                    <div class="card-body">
+                        <h5>Mining</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                </div>
+                <div class="card col-md-4">
+                    <img src="./assets/img/artisan-goods.jpg" class="card-img-top" alt="Manufacturing wine and preserved foods">
+                    <div class="card-body">
+                        <h5>Manufacturing</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
-    <footer class="footer">
-        <div class="footer__item">
-            <a href="./pages/contact.html">Contact</a>
+
+    <footer class="navbar bg-light">
+        <div class="container-fluid">
+            <a href="./../pages/contact.html" class="nav-link">Contact</a>
+            <h1 class="d-flex fs-5">All rights reserved</h1>
         </div>
-        <h6 class="footer__item">All rights reserved</h6>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 </body>
 </html>
