@@ -20,11 +20,12 @@
 }
 
 .nav-link:hover {
+    transition: 0.3s;
     color: rgb(110, 110, 9);
 }
 
 /*** Navbar End ***/
-/*** Main ***/
+/*** Section ***/
 
 .card {
     background-color: rgba(39, 37, 41, 0.644);
@@ -45,3 +46,5 @@
     max-width: 100px;
     max-height: 150px;
 }
+
+/*** Section End ***/
