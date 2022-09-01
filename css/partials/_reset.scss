@@ -1,0 +1,11 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $fontMerriweather;
+
+    &::selection {
+        background-color: rgb(10, 41, 88);
+        color: $maincolor;
+    }
+}

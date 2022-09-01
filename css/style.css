@@ -1,50 +1,54 @@
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&display=swap");
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Merriweather', serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Merriweather", serif;
 }
-
-/*** Navbar ***/
+*::-moz-selection {
+  background-color: rgb(10, 41, 88);
+  color: #e0ec5a;
+}
+*::selection {
+  background-color: rgb(10, 41, 88);
+  color: #e0ec5a;
+}
 
 .navbar {
-    background: rgb(0,187,255);
-    background: linear-gradient(0deg, rgba(0,187,255,1) 0%, rgba(6,27,74,1) 100%);
+  background: rgb(0, 187, 255);
+  background: linear-gradient(0deg, rgb(0, 187, 255) 0%, rgb(6, 27, 74) 100%);
 }
-
-.nav-link {
-    font-size: 20px;
-    color: yellow;
+.navbar .nav-link {
+  font-size: 20px;
+  color: #e0ec5a;
 }
-
-.nav-link:hover {
-    transition: 0.3s;
-    color: rgb(110, 110, 9);
+.navbar .nav-link:hover {
+  transition: 0.3s;
+  color: #9b9b1d;
 }
-
-/*** Navbar End ***/
-/*** Section ***/
-
-.card {
-    background-color: rgba(39, 37, 41, 0.644);
-    text-align: center;
-    color: rgb(255, 255, 255);
+.navbar .nav-active {
+  color: #9b9b1d;
 }
 
 .section {
-    background-image: url(./../assets/img/background.png);
-    background-size: cover;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    min-height: 90vh;
-    color: rgb(197, 162, 5);
+  background-image: url(./../assets/img/background.png);
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  min-height: 90vh;
+  color: #9b9b1d;
+}
+.section .card {
+  background-color: rgba(39, 37, 41, 0.644);
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+.section .col img {
+  max-width: 100px;
+  max-height: 150px;
 }
 
-.col img {
-    max-width: 100px;
-    max-height: 150px;
-}
-
-/*** Section End ***/
+.footer {
+  background: rgb(6, 27, 74);
+  background: linear-gradient(0deg, rgb(6, 27, 74) 0%, rgb(0, 187, 255) 100%);
+}/*# sourceMappingURL=style.css.map */

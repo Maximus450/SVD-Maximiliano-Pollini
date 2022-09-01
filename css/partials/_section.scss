@@ -1,0 +1,19 @@
+.section {
+    background-image: url(./../assets/img/background.png);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    min-height: 90vh;
+    color: $secondarycolor;
+
+    .card {
+        background-color: rgba(39, 37, 41, 0.644);
+        text-align: center;
+        color: rgb(255, 255, 255);
+    }
+
+    .col img {
+        max-width: 100px;
+        max-height: 150px;
+    }
+}
