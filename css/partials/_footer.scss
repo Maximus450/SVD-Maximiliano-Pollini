@@ -1,4 +1,9 @@
 .footer {
     background: rgb(6,27,74);
     background: linear-gradient(0deg, rgba(6,27,74,1) 0%, rgba(0,187,255,1) 100%);
+
+    .icons img {
+        width: 35px;
+        height: 35px;
+    }
 }

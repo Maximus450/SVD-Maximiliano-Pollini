@@ -17,3 +17,42 @@
         max-height: 150px;
     }
 }
+
+$cards: (
+    card1: red,
+    card2: green,
+    card3: blue,
+    card4: grey,
+    card5: cyan
+);
+
+@each $seccards, $bgcolor in $cards {
+    .section .ca-#{$seccards} {
+        background-color: $bgcolor;
+    }
+}
+
+.animal1,
+.animal9 {
+    @extend %animg;
+}
+
+.animal8,
+.animal14 {
+    @extend %animg;
+    color: blue;
+}
+
+@mixin size($width, $height) {
+    width: $width;
+    height: $height;
+}
+
+.section .animal1 img {
+    @include size(20px, 20px)
+}
+
+.section .animal9 img,
+.section .animal8 img {
+    @include size(200px, 200px)
+}

@@ -1,4 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&display=swap");
+.animal8,
+.animal14, .animal1,
+.animal9 {
+  background-color: rgba(39, 37, 41, 0.644);
+  border-radius: 10px;
+  justify-content: center;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -48,7 +56,47 @@
   max-height: 150px;
 }
 
+.section .ca-card1 {
+  background-color: red;
+}
+
+.section .ca-card2 {
+  background-color: green;
+}
+
+.section .ca-card3 {
+  background-color: blue;
+}
+
+.section .ca-card4 {
+  background-color: grey;
+}
+
+.section .ca-card5 {
+  background-color: cyan;
+}
+
+.animal8,
+.animal14 {
+  color: blue;
+}
+
+.section .animal1 img {
+  width: 20px;
+  height: 20px;
+}
+
+.section .animal9 img,
+.section .animal8 img {
+  width: 200px;
+  height: 200px;
+}
+
 .footer {
   background: rgb(6, 27, 74);
   background: linear-gradient(0deg, rgb(6, 27, 74) 0%, rgb(0, 187, 255) 100%);
+}
+.footer .icons img {
+  width: 35px;
+  height: 35px;
 }/*# sourceMappingURL=style.css.map */
