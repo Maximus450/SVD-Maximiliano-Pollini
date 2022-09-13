@@ -1,0 +1,29 @@
+{
+  "name": "sdv-maximiliano-pollini",
+  "version": "1.0.0",
+  "description": "Svd web page.",
+  "main": "index.html",
+  "scripts": {
+    "build-css":"node-sass --include-path scss css/style.scss css/style.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Maximus450/SVD-Maximiliano-Pollini.git"
+  },
+  "keywords": [
+    "svd",
+    "npm",
+    "init"
+  ],
+  "author": "Maximiliano Pollini",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Maximus450/SVD-Maximiliano-Pollini/issues"
+  },
+  "homepage": "https://github.com/Maximus450/SVD-Maximiliano-Pollini#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.3",
+    "nodemon": "^2.0.19"
+  }
+}

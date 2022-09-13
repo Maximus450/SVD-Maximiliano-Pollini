@@ -19,11 +19,11 @@
 }
 
 $cards: (
-    card1: red,
-    card2: green,
-    card3: blue,
-    card4: grey,
-    card5: cyan
+    card1: rgba(255, 0, 0, 0.5),
+    card2: rgba(0, 128, 0, 0.5),
+    card3: rgba(0, 0, 255, 0.5),
+    card4: rgba(128, 128, 128, 0.5),
+    card5: rgba(0, 255, 255, 0.5)
 );
 
 @each $seccards, $bgcolor in $cards {
@@ -32,27 +32,9 @@ $cards: (
     }
 }
 
-.animal1,
-.animal9 {
+.animal,
+.buildings,
+.villagers,
+.crops {
     @extend %animg;
-}
-
-.animal8,
-.animal14 {
-    @extend %animg;
-    color: blue;
-}
-
-@mixin size($width, $height) {
-    width: $width;
-    height: $height;
-}
-
-.section .animal1 img {
-    @include size(20px, 20px)
-}
-
-.section .animal9 img,
-.section .animal8 img {
-    @include size(200px, 200px)
 }
